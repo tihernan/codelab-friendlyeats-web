@@ -11,7 +11,7 @@ import { useRouter } from "next/navigation";
 import { firebaseConfig } from "@/src/lib/firebase/config";
 
 function useUserSession(initialUser) {
-	// The initialUser comes from the server via a server component
+	// The initialUser comes from the server via a server component.
 	const [user, setUser] = useState(initialUser);
 	const router = useRouter();
 
